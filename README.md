@@ -1,4 +1,2 @@
 # car-website
-Website for Uni assignment.
-
-test 4
+Website for Uni assignment. 
