@@ -1,4 +1,5 @@
 <?php
+session_start();
 $DB = "../DB/users.json";
 include_once "../DB/users.php";
 

@@ -1,0 +1,11 @@
+
+.slide-left, .slide-right {
+    transition: transform 300ms ease-in-out 100ms;
+}
+
+.slide-left:hover {
+    transform: translateX(-10px);
+}
+.slide-right:hover {
+    transform: translateX(10px);
+}
