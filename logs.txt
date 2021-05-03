@@ -3,3 +3,10 @@
 3-05-21 | 16:56:15 | magic | Admin logged in.
 3-05-21 | 19:04:18 | magic | Admin logged in.
 3-05-21 | 20:27:00 | emma | Manager logged in.
+3-05-21 | 20:35:42 | emma | Manager logged in.
+3-05-21 | 20:37:32 | emma | Manager logged in.
+3-05-21 | 20:38:55 | magic | Admin logged in.
+3-05-21 | 20:40:11 | emma | Manager logged in.
+3-05-21 | 21:21:11 | sam | User logged in.
+3-05-21 | 21:21:58 | sam | User logged in.
+3-05-21 | 21:24:43 | sam | User logged in.

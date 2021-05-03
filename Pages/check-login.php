@@ -24,7 +24,7 @@ foreach ($USERS as $key => $user) {
                 case "user":
                     write_to_log("../logs.txt", $user["username"], "User logged in.");
                     $_SESSION["ID"]=2;
-                    header('Location: main.html');
+                    header('Location: main.php');
                     break;
             }
             exit();

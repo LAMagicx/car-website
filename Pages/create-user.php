@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['ID'])) {
-  if ($_SESSION['ID'] != 0) {
+  if ($_SESSION['ID'] != 1) {
     header('Location: wrong-page.php');
     exit();
   }
@@ -26,11 +26,11 @@ if (isset($_SESSION['ID'])) {
     <title>Magic</title>
     </head>
     <body>
-    <h1>Create Manager</h1>
+    <h1>Create User</h1>
 
     <form method="POST" action="create-login.php">
-        <input type="hidden" name="type" value="manager">
-        <input type="hidden" name="page" value="admin">
+        <input type="hidden" name="type" value="user">
+        <input type="hidden" name="page" value="manage">
         <div class="mb-3">
             <label for="user" class="form-label">Username</label>
             <input type="text" class="form-control" name="username" id="user">

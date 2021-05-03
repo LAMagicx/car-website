@@ -2,7 +2,7 @@
 session_start();
 if (isset($_SESSION['ID'])) {
   if ($_SESSION['ID'] != 0) {
-    header('Location: wrong-page.html');
+    header('Location: wrong-page.php');
     exit();
   }
 } else {
@@ -40,10 +40,10 @@ if (isset($_SESSION['ID'])) {
     <div class="container-sm">
       <div class="row">
         <div class="col-6"><h3>Admin</h3></div>
-        <div class="col-6 slide-left"><h3 id="header-button" class="text-end" onclick="logout()">Log Out</h3></div>
+        <div class="col-6"><h3 id="header-button" class="slide-left text-end" onclick="logout()">Log Out</h3></div>
       </div><div class="row">
-        <div class="col-6 slide-right"><h3 id="header-button" onclick="location.href='create-manager.php'">Add Manager</h3></div>
-        <div class="col-6 slide-left"><h3 id="header-button" class="text-end" onclick="location.href='view-messages.php'">View Messages</h3></div>
+        <div class="col-6"><h3 id="header-button" class="slide-right" onclick="location.href='create-manager.php'">Add Manager</h3></div>
+        <div class="col-6"><h3 id="header-button" class="slide-left text-end" onclick="location.href='view-messages.php'">View Messages</h3></div>
       </div>
     </div>
     <div class="wrapper">
