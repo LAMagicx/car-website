@@ -1,0 +1,40 @@
+
+html{
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+button {
+    transition: all 100ms ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(11, 128, 238);
+    transform: scale(1.01);
+}
+
+input {
+    transition: all 200ms ease-in-out;
+}
+
+input:hover {
+    transform: scale(1.005);
+}
+
+.form-control {
+    white-space: no-wrap;
+    overflow: auto;
+    
+}
+
+#header-button:hover {
+    color: rgb(2, 80, 196);
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+}
