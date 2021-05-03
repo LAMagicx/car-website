@@ -28,12 +28,12 @@ if (isset($_SESSION['ID'])) {
     <title>Magic</title>
   </head>
   <body>
-    <form method="POST" action="login.php" id="form">
+    <form method="POST" action="login.php" id="form-logout">
       <input type="hidden" name="OUT" value="admin">
     </form>
     <script>
       function logout() {
-        document.getElementById("form").submit();
+        document.getElementById("form-logout").submit();
       }
     </script>
     <h1>Magify</h1>
@@ -42,8 +42,8 @@ if (isset($_SESSION['ID'])) {
         <div class="col-6"><h3>Admin</h3></div>
         <div class="col-6 slide-left"><h3 id="header-button" class="text-end" onclick="logout()">Log Out</h3></div>
       </div><div class="row">
-        <div class="col-6 slide-right"><h3 id="header-button" onclick="addManager()">Add Manager</h3></div>
-        <div class="col-6 slide-left"><h3 id="header-button" class="text-end" onclick="viewMsg()">View Messages</h3></div>
+        <div class="col-6 slide-right"><h3 id="header-button" onclick="location.href='create-manager.php'">Add Manager</h3></div>
+        <div class="col-6 slide-left"><h3 id="header-button" class="text-end" onclick="location.href='view-messages.php'">View Messages</h3></div>
       </div>
     </div>
     <div class="wrapper">

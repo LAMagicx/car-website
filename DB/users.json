@@ -1,8 +1,12 @@
 {
-    "samsgrice@gmail.com":
-    {
-        "username":"magic",
-        "password":"$2y$10$TRAHeIG/xHmlQyJalf5pVOrxbV.dsJbG8xWpEZaBbxMRWydxsl9ji",
-        "type":"admin"
+    "emmajell@gmail.com": {
+        "username": "emma",
+        "password": "$2y$10$EJnP.J95rykzoF03NqTBtu2ZLZbCgD88WxhFwhkKgWrxJAMyhcrA.",
+        "type": "manager"
+    },
+    "samsgrice@gmail.com": {
+        "username": "magic",
+        "password": "$2y$10$TRAHeIG\/xHmlQyJalf5pVOrxbV.dsJbG8xWpEZaBbxMRWydxsl9ji",
+        "type": "admin"
     }
 }
