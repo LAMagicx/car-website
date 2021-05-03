@@ -1,10 +1,3 @@
-<?php
-
-include_once "../DB/users.php";
-$USERS = get_users("../DB/users.json");
-
-?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,7 +18,7 @@ $USERS = get_users("../DB/users.json");
     <form method="POST" action="check-login.php" class="form-floating">
         <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" name="email" id="email"<>
+            <input type="email" class="form-control" name="email" id="email">
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
@@ -37,11 +30,17 @@ $USERS = get_users("../DB/users.json");
                 if (isset($_POST["OUT"])) {
                     session_destroy();
                 }
-                if (isset($_GET["incorrect-credentials"])) {
+                if (isset($_POST["incorrect_email"])) {
                     echo "<div id='passwordHelpBlock' class='form-text is-invalid'>
-                    Your email or password is incorrect!
+                    Your email is incorrect!
                     </div>";
                 }
+                if (isset($_POST["incorrect-password"])) {
+                    echo "<div id='passwordHelpBlock' class='form-text is-invalid'>
+                    Your password is incorrect!
+                    </div>";
+                }
+
             ?>
         </div>
         <button type="submit" class="btn btn-primary" name="signin">Sign In</button>
