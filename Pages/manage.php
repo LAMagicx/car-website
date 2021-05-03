@@ -5,7 +5,7 @@ if (isset($_SESSION['ID'])) {
     header('Location: wrong-page.html');
   }
 } else {
-  header('Location: ../SignIn/login.php');
+  header('Location: login.php');
 }
 ?>
 
@@ -24,7 +24,7 @@ if (isset($_SESSION['ID'])) {
     <title>Magic</title>
   </head>
   <body>
-    <form method="POST" action="../SignIn/login.php" id="form">
+    <form method="POST" action="login.php" id="form">
       <input type="hidden" name="OUT" value="manager">
     </form>
     <script>
